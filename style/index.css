@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Global CSS */
+
+.w-15-percent {
+  width: 15%;
+}
+
+.w-20-percent {
+  width: 20%;
+}
+
+.w-30-percent {
+  width: 30%;
+}
+
+.w-40-percent {
+  width: 40%;
+}
+
+.w-50-percent {
+  width: 50%;
+}
+
+.w-90-percent {
+  width: 90%;
+}
+
+.h-50-percentage {
+  height: 50%;
+}
+
+.h-60-percent {
+  height: 60%;
+}
+
+.h-80-px {
+  height: 80px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mr-20-px {
+  margin-right: 20px;
+}
+
+.px-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.text-small {
+  font-size: 16px;
+}
+
+.text-small-xs {
+  font-size: 14px;
+}
+
+.text-smooth-small-xs {
+  font-size: 12px;
+}
+
+.text-light-yellow {
+  color: #ffef63;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.left-border-2-white {
+  border-left: 2px solid #fff;
+}
+
+.font-nunito {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-content-end {
+  justify-content: end;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black-30 {
+  background-color: rgba(0, 0, 0, 0.208);
+}
+
+.custom-rounded-bottom-right-15 {
+  border-bottom-right-radius: 15px;
+}
+
+.border-none {
+  border: none;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+/* End Global CSS */
+
+.top-header-bread {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  background-color: #6b53aa;
+}
+
+#sticky-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.wrapped-search-box {
+  height: 48px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.select-view {
+  border-right: 2px solid #dfdfdf;
+  height: 60%;
+}
+
+/* .top-navs-search:focus-within {
+  border: 1px solid #000;
+} */
+
+.top-navs-search *:focus {
+  border: none !important;
+  outline: none !important;
+}
