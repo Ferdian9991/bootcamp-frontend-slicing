@@ -30,6 +30,10 @@ body {
   right: 0;
 }
 
+.bottom-0 {
+  bottom: 0;
+}
+
 .left-0 {
   left: 0;
 }
@@ -162,6 +166,11 @@ body {
   padding-bottom: 20px;
 }
 
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .text-small {
   font-size: 16px;
 }
@@ -218,8 +227,16 @@ body {
   font-weight: 600;
 }
 
+.font-regular {
+  font-weight: 400;
+}
+
 .flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .flex-dir-col {
@@ -278,6 +295,10 @@ body {
   width: fit-content;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* End Global CSS */
 
 .top-header-bread {
@@ -316,6 +337,14 @@ body {
 
 .banner-heading span {
   color: #523d91;
+}
+
+.category-card {
+  background-color: #fafafa;
+  width: 285px;
+  height: 200px;
+  border-radius: 12px;
+  margin: 15px;
 }
 
 /* Responsive query */
