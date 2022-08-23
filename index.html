@@ -16,7 +16,7 @@
     <!-- Top header breadcumb -->
 
     <div class="top-header-bread">
-      <div class="top-header-bread-left w-50-percent h-full">
+      <div class="top-header-bread-left w-50-percent h-full md-hidden">
         <div
           class="bg-black-30 w-fit-content px-24 h-full flex flex-align-center custom-rounded custom-rounded-bottom-right-15"
         >
@@ -25,9 +25,11 @@
           </h2>
         </div>
       </div>
-      <div class="top-header-bread-right w-50-percent px-24 h-full mr-20-px">
+      <div
+        class="top-header-bread-right w-50-percent md-w-full px-24 h-full mr-20-px md-m-0"
+      >
         <div class="flex flex-content-end h-full">
-          <div class="px-16 flex h-full flex flex-align-center">
+          <div class="px-16 flex h-full flex flex-align-center md-flex-align-center">
             <svg
               width="20"
               height="20"
@@ -85,12 +87,12 @@
     <!-- Sticky header -->
 
     <div id="sticky-header" class="h-80-px bg-white flex flex-align-center">
-      <div class="px-100 h-full w-full flex flex-align-center">
+      <div class="px-100 md-px-20 h-full w-full flex flex-align-center">
         <div class="w-20-percent">
           <img src="assets/logo.png" height="61px" width="139px" />
         </div>
         <!-- Search box -->
-        <div class="w-50-percent">
+        <div id="search-navs" class="w-50-percent">
           <div class="wrapped-search-box flex flex-align-center w-full">
             <div class="px-20 flex select-view w-15-percent">
               <select
@@ -116,7 +118,10 @@
         </div>
 
         <!-- User info -->
-        <div class="w-30-percent flex flex-align-center flex-content-end">
+        <div
+          id="user-info"
+          class="w-30-percent flex flex-align-center flex-content-end"
+        >
           <div class="px-10">
             <svg
               width="28"
@@ -193,7 +198,7 @@
               />
             </svg>
           </div>
-          <div class="px-10 flex flex-dir-col">
+          <div class="px-10 flex flex-dir-col md-hidden">
             <p
               class="text-smooth-small-xs font-nunito"
               style="color: #9c9c9c; font-weight: 500"
@@ -210,10 +215,13 @@
 
     <main>
       <!-- Large banner -->
-      <div id="large-banner" class="px-100">
-        <div class="flex flex-align-center w-full" style="height: 460px">
-          <div class="w-50-percent flex flex-content-start">
-            <div style="width: 600px">
+      <div id="large-banner" class="px-100 md-px-20 md-mt-20">
+        <div
+          class="flex flex-align-center w-full md-flex-dir-col md-flex-dir-col-reverse md-h-auto"
+          style="height: 460px"
+        >
+          <div class="w-50-percent flex flex-content-start md-w-full">
+            <div class="w-600-px">
               <div class="py-12">
                 <div
                   class="inline-block py-14 px-20 rounded-2xl"
@@ -224,7 +232,9 @@
                   </p>
                 </div>
               </div>
-              <h2 class="banner-heading w-500-px font-nunito text-xxl py-12">
+              <h2
+                class="banner-heading w-500-px font-nunito text-xxl py-12 md-w-full"
+              >
                 Find <span>healthy, fresh</span> and
                 <span>affordable</span> organic food
               </h2>
@@ -272,14 +282,35 @@
             </div>
           </div>
           <div
-            class="w-50-percent h-full flex flex-align-center flex-content-end"
+            class="w-50-percent h-full flex flex-align-center flex-content-end md-w-full"
           >
             <img
               src="assets/banner-image_food_627127.png"
-              width="500px"
-              height="360px"
+              class="md-h-auto md-w-full"
+              style="width: 500px; height: 360px"
             />
           </div>
+        </div>
+      </div>
+
+      <div class="px-100 md-px-20">
+        <div class="flex flex-dir-col w-full">
+          <div class="w-full relative">
+            <div class="absolute left-0">
+              <h2 class="text-lg font-nunito font-semibold">
+                Our Hottest Category
+              </h2>
+            </div>
+            <div class="absolute right-0">
+              <h2
+                class="text-base font-nunito font-semibold"
+                style="color: #533b92"
+              >
+                View All Categories
+              </h2>
+            </div>
+          </div>
+          <div></div>
         </div>
       </div>
     </main>
