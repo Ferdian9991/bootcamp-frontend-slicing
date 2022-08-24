@@ -38,6 +38,22 @@ body {
   left: 0;
 }
 
+.top-10 {
+  top: 10px;
+}
+
+.right-10 {
+  right: 10px;
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.left-10 {
+  left: 10px;
+}
+
 .w-15-percent {
   width: 15%;
 }
@@ -111,6 +127,11 @@ body {
   padding-right: 5px;
 }
 
+.px-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .px-10 {
   padding-left: 10px;
   padding-right: 10px;
@@ -151,6 +172,11 @@ body {
   padding-bottom: 12px;
 }
 
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .py-14 {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -184,7 +210,7 @@ body {
 }
 
 .text-base {
-  font-size: 18;
+  font-size: 18px;
 }
 
 .text-medium {
@@ -283,6 +309,10 @@ body {
   border-radius: 10rem;
 }
 
+.rounded-full {
+  border-radius: 100%;
+}
+
 .custom-rounded-bottom-right-15 {
   border-bottom-right-radius: 15px;
 }
@@ -313,6 +343,7 @@ body {
   top: 0;
   left: 0;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  z-index: 20 !important;
 }
 
 .wrapped-search-box {
@@ -344,17 +375,41 @@ body {
   width: 285px;
   height: 200px;
   border-radius: 12px;
-  margin: 15px;
+  margin-right: 35px;
+  margin-top: 20px;
+}
+
+.products-card-image {
+  background-position: 100%;
+  background-size: cover;
+  width: 285px;
+  height: 255px;
+  border-radius: 12px;
+}
+
+.products-card {
+  width: 285px;
+  margin-right: 35px;
+  margin-top: 20px;
 }
 
 /* Responsive query */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 860px) {
   #search-navs {
     display: none;
   }
   #user-info {
     width: 80%;
+  }
+  .category-card {
+    margin-right: 0px !important;
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+  .products-card {
+    margin-right: 0px !important;
+    margin-top: 0px !important;
   }
   .md-px-20 {
     padding-left: 20px;
@@ -383,5 +438,26 @@ body {
   }
   .md-mt-20 {
     margin-top: 20px;
+  }
+  .md-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .md-flex-content-center {
+    justify-content: center;
+  }
+  .md-text-small {
+    font-size: 16px;
+  }
+  .md-text-small-xs {
+    font-size: 14px;
+  }
+  .md-text-smooth-small-xs {
+    font-size: 12px;
+  }
+  .md-text-base {
+    font-size: 18;
+  }
+  .md-text-medium {
+    font-size: 20px;
   }
 }

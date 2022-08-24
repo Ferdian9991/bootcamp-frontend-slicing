@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/index.css?9" />
 
     <title>Slicing</title>
   </head>
@@ -217,7 +217,7 @@
 
     <main>
       <!-- Large banner -->
-      <div id="large-banner" class="px-100 md-px-20 md-mt-20">
+      <div id="large-banner" class="px-100 md-px-20 md-mt-20 relative">
         <div
           class="flex flex-align-center w-full md-flex-dir-col md-flex-dir-col-reverse md-h-auto"
           style="height: 460px"
@@ -300,14 +300,14 @@
         <div class="flex flex-dir-col w-full relative">
           <div class="w-full relative" style="height: 40px">
             <div class="flex flex-align-center h-full">
-              <div class="absolute left-0">
-                <h2 class="text-lg font-nunito font-semibold">
+              <div class="w-50-percent flex-content-start flex">
+                <h2 class="text-lg font-nunito font-semibold md-text-small">
                   Our Hottest Category
                 </h2>
               </div>
-              <div class="absolute right-0">
+              <div class="w-50-percent flex-content-end flex">
                 <h2
-                  class="text-base font-nunito font-semibold"
+                  class="text-base font-nunito font-semibold md-text-small"
                   style="color: #533b92"
                 >
                   View All Categories
@@ -315,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap md-flex-content-center">
             <div class="category-card relative">
               <div class="px-24 py-24">
                 <h5
@@ -385,7 +385,821 @@
         </div>
       </div>
 
-      <div class="py-14"></div>
+      <!-- Featured products -->
+      <div class="px-100 py-24 md-px-20">
+        <div class="flex flex-dir-col w-full relative">
+          <div class="w-full relative" style="height: 40px">
+            <div class="flex flex-align-center h-full">
+              <div class="w-50-percent flex-content-start flex">
+                <h2 class="text-lg font-nunito font-semibold md-text-small">
+                  Featured Products
+                </h2>
+              </div>
+              <div class="w-50-percent flex-content-end flex">
+                <h2
+                  class="text-base font-nunito font-semibold md-text-small"
+                  style="color: #533b92"
+                >
+                  View All Products
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap md-flex-content-center">
+            <!-- Product card 1 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_001.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Onion – Red (250g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $3.55
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 2 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_002.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Celery (750g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $8.75
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 3 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_003.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Grapes (250g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $5.15
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 4 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_004.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Grapes (250g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $1.20
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 5 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_005.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Onion – Red (250g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $3.55
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 6 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_006.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Melon – Watermelon (1kg)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $8.57
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 7 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_007.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Potato – Sebago (500g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $5.15
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product card 8 -->
+            <div class="products-card relative">
+              <div
+                class="products-card-image relative"
+                style="background: url('assets/post_008.png')"
+              >
+                <div
+                  class="absolute px-10 py-8 top-10 left-10 rounded-2xl text-white font-nunito text-small-xs"
+                  style="background-color: #f34949"
+                >
+                  26.2% OFF
+                </div>
+                <div
+                  class="absolute px-8 py-8 bg-white rounded-full top-10 right-10"
+                >
+                  <div
+                    class="flex h-full w-full flex-content-center flex-align-center"
+                  >
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1975 23.4112C13.815 23.5462 13.185 23.5462 12.8025 23.4112C9.54 22.2975 2.25 17.6512 2.25 9.77624C2.25 6.29999 5.05125 3.48749 8.505 3.48749C10.5525 3.48749 12.3637 4.47749 13.5 6.00749C14.6362 4.47749 16.4587 3.48749 18.495 3.48749C21.9487 3.48749 24.75 6.29999 24.75 9.77624C24.75 17.6512 17.46 22.2975 14.1975 23.4112Z"
+                        stroke="#EA5455"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="py-14">
+                <h2
+                  class="text-base font-semibold font-nunito py-5"
+                  style="color: #9c9c9c"
+                >
+                  Vegetables
+                </h2>
+                <h2 class="text-base font-semibold font-nunito py-5">
+                  Herb – Marjoram (25g)
+                </h2>
+                <div class="flex flex-align-center" style="height: 44px">
+                  <div class="w-50-percent flex flex-content-start">
+                    <h5 class="text-medium font-nunito" style="color: #533b92">
+                      $2.80
+                    </h5>
+                  </div>
+                  <div class="w-50-percent flex flex-content-end">
+                    <div
+                      class="px-8 py-8 bg-white rounded-full"
+                      style="background-color: #533b92"
+                    >
+                      <div
+                        class="flex h-full w-full flex-content-center flex-align-center"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.42894 6.5772C5.24561 6.5772 5.05263 6.5 4.91754 6.36491C4.63772 6.08509 4.63772 5.62193 4.91754 5.34211L8.42017 1.83948C8.7 1.55965 9.16316 1.55965 9.44298 1.83948C9.7228 2.1193 9.7228 2.58246 9.44298 2.86228L5.94035 6.36491C5.79561 6.5 5.61228 6.5772 5.42894 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.571 6.5772C18.3877 6.5772 18.2044 6.50965 18.0596 6.36491L14.557 2.86228C14.2772 2.58246 14.2772 2.1193 14.557 1.83948C14.8368 1.55965 15.3 1.55965 15.5798 1.83948L19.0824 5.34211C19.3623 5.62193 19.3623 6.08509 19.0824 6.36491C18.9474 6.5 18.7544 6.5772 18.571 6.5772Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M19.9219 10.6491C19.8544 10.6491 19.7868 10.6491 19.7193 10.6491H19.4974H4.28071C3.60527 10.6588 2.83334 10.6588 2.27369 10.0991C1.82983 9.66491 1.6272 8.98947 1.6272 7.99561C1.6272 5.3421 3.56667 5.3421 4.49299 5.3421H19.507C20.4333 5.3421 22.3728 5.3421 22.3728 7.99561C22.3728 8.99912 22.1702 9.66491 21.7263 10.0991C21.2246 10.6009 20.5491 10.6491 19.9219 10.6491ZM4.49299 9.20175H19.729C20.1632 9.2114 20.5684 9.2114 20.7035 9.07631C20.7711 9.00877 20.9158 8.77719 20.9158 7.99561C20.9158 6.90526 20.6456 6.78947 19.4974 6.78947H4.49299C3.34474 6.78947 3.07457 6.90526 3.07457 7.99561C3.07457 8.77719 3.22895 9.00877 3.28685 9.07631C3.42193 9.20175 3.83685 9.20175 4.26141 9.20175H4.49299Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M9.83858 18.079C9.44297 18.079 9.1149 17.7509 9.1149 17.3553V13.9298C9.1149 13.5342 9.44297 13.2061 9.83858 13.2061C10.2342 13.2061 10.5623 13.5342 10.5623 13.9298V17.3553C10.5623 17.7605 10.2342 18.079 9.83858 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.2772 18.079C13.8816 18.079 13.5535 17.7509 13.5535 17.3553V13.9298C13.5535 13.5342 13.8816 13.2061 14.2772 13.2061C14.6728 13.2061 15.0009 13.5342 15.0009 13.9298V17.3553C15.0009 17.7605 14.6728 18.079 14.2772 18.079Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.7886 22.3728H8.97017C5.51579 22.3728 4.74386 20.3176 4.44473 18.5325L3.08421 10.186C3.01666 9.79036 3.28684 9.42369 3.68245 9.35615C4.07807 9.28861 4.44473 9.55878 4.51228 9.95439L5.8728 18.2912C6.15263 19.9991 6.73158 20.9254 8.97017 20.9254H14.7886C17.2684 20.9254 17.5482 20.057 17.8667 18.3781L19.4877 9.9351C19.5649 9.53948 19.9412 9.27896 20.3368 9.3658C20.7325 9.44299 20.9833 9.81931 20.9061 10.2149L19.2851 18.6579C18.9088 20.6167 18.2816 22.3728 14.7886 22.3728Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script
