@@ -54,6 +54,14 @@ body {
   left: 10px;
 }
 
+.w-40-px {
+  width: 40px;
+}
+
+.h-40-px {
+  height: 40px;
+}
+
 .w-15-percent {
   width: 15%;
 }
@@ -393,6 +401,24 @@ body {
 .products-card {
   width: 24%;
   margin-top: 20px;
+}
+
+.pagination-active {
+  background-color: #533b92;
+  color: #ffffff !important;
+}
+
+#pagination > div {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+#pagination > div:hover {
+  background-color: #d6d4d4;
+  transition: all;
+  transition-duration: 500ms;
 }
 
 /* Responsive query */
